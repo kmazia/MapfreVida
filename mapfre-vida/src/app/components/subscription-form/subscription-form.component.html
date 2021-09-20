@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="form">
+    <div class="row">
+      <div class="col">
+        <div class="input-sect">
+          <label class="default-label" for="name">Nome completo:</label>
+          <input [(ngModel)]="form.name" class="default-input" type="text" id="name">
+        </div>
+        <div class="input-sect">
+          <label class="default-label" for="email">Email:</label>
+          <input [(ngModel)]="form.email" class="default-input" type="text" id="email">
+        </div>
+        <div class="input-sect">
+          <label class="default-label" for="phone">Celular:</label>
+          <input [(ngModel)]="form.phone" class="default-input" type="text" id="phone">
+        </div>
+        <div class="input-sect">
+          <label class="default-label" for="cpf">CPF:</label>
+          <input [(ngModel)]="form.cpf" class="default-input" type="text" id="cpf">
+        </div>
+        <div class="input-sect">
+          <label class="default-label" for="born">Data de nascimento:</label>
+          <input [(ngModel)]="form.bornDate" class="default-input" type="text" id="born">
+        </div>
+        <div class="row mt-32px">
+          <div class="col">
+            <button class="btn btn-default"(click)="sendForm()" [disabled]="!form">RECEBER UMA COTAÇÃO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
